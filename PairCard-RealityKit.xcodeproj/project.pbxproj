@@ -13,6 +13,14 @@
 		A4DD1EEA24371A9000AB63A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EE824371A9000AB63A7 /* Main.storyboard */; };
 		A4DD1EEC24371A9500AB63A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EEB24371A9500AB63A7 /* Assets.xcassets */; };
 		A4DD1EEF24371A9500AB63A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EED24371A9500AB63A7 /* LaunchScreen.storyboard */; };
+		A4DD1EFF24371C3600AB63A7 /* 01.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EF724371C3600AB63A7 /* 01.usdz */; };
+		A4DD1F0024371C3600AB63A7 /* 06.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EF824371C3600AB63A7 /* 06.usdz */; };
+		A4DD1F0124371C3600AB63A7 /* 07.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EF924371C3600AB63A7 /* 07.usdz */; };
+		A4DD1F0224371C3600AB63A7 /* 08.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EFA24371C3600AB63A7 /* 08.usdz */; };
+		A4DD1F0324371C3600AB63A7 /* 04.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EFB24371C3600AB63A7 /* 04.usdz */; };
+		A4DD1F0424371C3600AB63A7 /* 05.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EFC24371C3600AB63A7 /* 05.usdz */; };
+		A4DD1F0524371C3600AB63A7 /* 02.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EFD24371C3600AB63A7 /* 02.usdz */; };
+		A4DD1F0624371C3600AB63A7 /* 03.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A4DD1EFE24371C3600AB63A7 /* 03.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		A4DD1EEB24371A9500AB63A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4DD1EEE24371A9500AB63A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4DD1EF024371A9500AB63A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4DD1EF724371C3600AB63A7 /* 01.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 01.usdz; sourceTree = "<group>"; };
+		A4DD1EF824371C3600AB63A7 /* 06.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 06.usdz; sourceTree = "<group>"; };
+		A4DD1EF924371C3600AB63A7 /* 07.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 07.usdz; sourceTree = "<group>"; };
+		A4DD1EFA24371C3600AB63A7 /* 08.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 08.usdz; sourceTree = "<group>"; };
+		A4DD1EFB24371C3600AB63A7 /* 04.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 04.usdz; sourceTree = "<group>"; };
+		A4DD1EFC24371C3600AB63A7 /* 05.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 05.usdz; sourceTree = "<group>"; };
+		A4DD1EFD24371C3600AB63A7 /* 02.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 02.usdz; sourceTree = "<group>"; };
+		A4DD1EFE24371C3600AB63A7 /* 03.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 03.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +78,25 @@
 				A4DD1EE824371A9000AB63A7 /* Main.storyboard */,
 				A4DD1EEB24371A9500AB63A7 /* Assets.xcassets */,
 				A4DD1EED24371A9500AB63A7 /* LaunchScreen.storyboard */,
+				A4DD1EF624371C3600AB63A7 /* modelusdzfile */,
 				A4DD1EF024371A9500AB63A7 /* Info.plist */,
 			);
 			path = "PairCard-RealityKit";
+			sourceTree = "<group>";
+		};
+		A4DD1EF624371C3600AB63A7 /* modelusdzfile */ = {
+			isa = PBXGroup;
+			children = (
+				A4DD1EF724371C3600AB63A7 /* 01.usdz */,
+				A4DD1EF824371C3600AB63A7 /* 06.usdz */,
+				A4DD1EF924371C3600AB63A7 /* 07.usdz */,
+				A4DD1EFA24371C3600AB63A7 /* 08.usdz */,
+				A4DD1EFB24371C3600AB63A7 /* 04.usdz */,
+				A4DD1EFC24371C3600AB63A7 /* 05.usdz */,
+				A4DD1EFD24371C3600AB63A7 /* 02.usdz */,
+				A4DD1EFE24371C3600AB63A7 /* 03.usdz */,
+			);
+			path = modelusdzfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +157,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DD1F0124371C3600AB63A7 /* 07.usdz in Resources */,
+				A4DD1EFF24371C3600AB63A7 /* 01.usdz in Resources */,
+				A4DD1F0024371C3600AB63A7 /* 06.usdz in Resources */,
+				A4DD1F0424371C3600AB63A7 /* 05.usdz in Resources */,
 				A4DD1EEF24371A9500AB63A7 /* LaunchScreen.storyboard in Resources */,
+				A4DD1F0224371C3600AB63A7 /* 08.usdz in Resources */,
 				A4DD1EEC24371A9500AB63A7 /* Assets.xcassets in Resources */,
 				A4DD1EEA24371A9000AB63A7 /* Main.storyboard in Resources */,
+				A4DD1F0324371C3600AB63A7 /* 04.usdz in Resources */,
+				A4DD1F0524371C3600AB63A7 /* 02.usdz in Resources */,
+				A4DD1F0624371C3600AB63A7 /* 03.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
