@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // MARK: Add anchorentity to arView scene
         // Create an anchor for a horizontal plane with a minimum area of 20 cm^2
         let anchor = AnchorEntity(plane: .horizontal, minimumBounds: [0.2 ,0.2])
@@ -105,6 +104,7 @@ class ViewController: UIViewController {
             card.position = [x * 0.1, 0, z * 0.1]
 
             // Add the card to the anchor
+            print("show card")
             anchor.addChild(card)
         }
         
