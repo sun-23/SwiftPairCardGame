@@ -129,6 +129,9 @@ class ViewController: UIViewController {
                 firstCardPick = card
                 print("first card pick : \(String(describing: firstCardPick?.name ?? "no card"))")
             }
+            if (firstCardPick != nil && secondCardPick != nil) {
+                chackPair()
+            }
         }
     }
     
@@ -138,27 +141,38 @@ class ViewController: UIViewController {
         
         if (firstCardPick?.name == secondCardPick?.name) {
             print("Pair!!")
-            // remove card
-            firstCardPick?.removeFromParent()
-            secondCardPick?.removeFromParent()
+            // delay 1 second
             
-            // clear card piker
-            firstCardPick = nil
-            secondCardPick = nil
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                // remove card
+                self.firstCardPick?.removeFromParent()
+                self.secondCardPick?.removeFromParent()
+                
+                // clear card piker
+                self.firstCardPick = nil
+                self.secondCardPick = nil
+            }
         } else {
-            // flip card down
-            var flipDownfirst = firstCardPick?.transform
-            var flipDownSecond = secondCardPick?.transform
-            // Set the card to rotate back to angle degrees in x axis
-            flipDownfirst?.rotation = simd_quatf(angle: .pi, axis: [1,0,0])
-            flipDownSecond?.rotation = simd_quatf(angle: .pi, axis: [1,0,0])
-            // action flip card down
-            firstCardPick?.move(to: flipDownfirst!, relativeTo: firstCardPick?.parent, duration: 0.25, timingFunction: .easeInOut)
-            secondCardPick?.move(to: flipDownSecond!, relativeTo: secondCardPick?.parent, duration: 0.25, timingFunction: .easeInOut)
-            
+//            // flip card down
+//            var flipDownfirst = firstCardPick?.transform
+//            var flipDownSecond = secondCardPick?.transform
+//            // Set the card to rotate back to angle degrees in x axis
+//            flipDownfirst?.rotation = simd_quatf(angle: .pi, axis: [1,0,0])
+//            flipDownSecond?.rotation = simd_quatf(angle: .pi, axis: [1,0,0])
+//            // action flip card down
+//            firstCardPick?.move(to: flipDownfirst!, relativeTo: firstCardPick?.parent, duration: 0.25, timingFunction: .easeInOut)
+//            secondCardPick?.move(to: flipDownSecond!, relativeTo: secondCardPick?.parent, duration: 0.25, timingFunction: .easeInOut)
+//
             // clear card piker
-            firstCardPick = nil
-            secondCardPick = nil
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                // remove card
+                self.flipCard(card: self.firstCardPick!, angle: .pi)
+                self.flipCard(card: self.secondCardPick!, angle: .pi)
+                // clear card piker
+                self.firstCardPick = nil
+                self.secondCardPick = nil
+            }
         }
     }
     
@@ -169,9 +183,9 @@ class ViewController: UIViewController {
         
         card.move(to: flipTransform, relativeTo: card.parent, duration: 0.25, timingFunction: .easeInOut)
         
-        if (firstCardPick != nil && secondCardPick != nil) {
-            chackPair()
-        }
+//        if (firstCardPick != nil && secondCardPick != nil) {
+//            chackPair()
+//        }
     }
     
 }
